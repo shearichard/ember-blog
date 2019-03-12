@@ -1,10 +1,30 @@
-language: ruby
-cache: bundler
+---
+language: node_js
+node_js:
+  - "8"
+
+sudo: false
+dist: trusty
+
+addons:
+  chrome: stable
+
+cache:
+  directories:
+    - $HOME/.npm
+
+env:
+  global:
+    # See https://git.io/vdao3 for details.
+    - JOBS=1
+
 before_install:
-  - gem update --system
-  - gem install bundler
+  - npm config set spin false
+  - npm install alex --global
+
 script:
-- npm install alex markdownlint-cli --global
-- bash scripts/language-check.sh
-- bash scripts/markdown-lint.sh
-- bundle exec middleman build
+  - bash scripts/language-check.sh
+  - bash scripts/markdown-lint.sh
+  - npm run lint:hbs
+  - npm run lint:js
+  - npm test
