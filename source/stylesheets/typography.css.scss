@@ -1,0 +1,148 @@
+// copied from ember-styleguide
+
+@font-face {
+  font-family: 'Inter web';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Inter-Regular.woff2?v=3.11') format('woff2'), url('/fonts/Inter-Regular.woff?v=3.11') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter web';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/Inter-SemiBold.woff2?v=3.11') format('woff2'),
+    url('/fonts/Inter-SemiBold.woff?v=3.11') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter web';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('/fonts/Inter-ExtraLight-BETA.woff2?v=3.11') format('woff2'),
+    url('/fonts/Inter-ExtraLight-BETA.woff?v=3.11') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('/fonts/Inter-roman.var.woff2?v=3.11') format('woff2');
+}
+
+.sans {
+  font-family: var(--font-family-sans);
+}
+
+.bold {
+  font-weight: var(--font-weight-3);
+}
+
+.italic {
+  font-style: italic;
+}
+
+p + * {
+  margin-top: var(--spacing-2);
+}
+
+.xsmall,
+small {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+}
+
+.small,
+p {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+.medium,
+h3 {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+  font-weight: var(--font-weight-3);
+}
+
+.large,
+h2 {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+  font-weight: var(--font-weight-3);
+}
+
+.xlarge,
+h1 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+  font-weight: var(--font-weight-2);
+}
+
+.display,
+.display-1 {
+  font-size: var(--font-size-display-1);
+  line-height: var(--line-height-display-1);
+  font-weight: var(--font-weight-1);
+}
+
+.display-2 {
+  font-size: var(--font-size-display-2);
+  line-height: var(--line-height-display-2);
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: var(--spacing-1);
+}
+
+h1 + * {
+  margin-top: var(--spacing-2);
+}
+
+* + h1 {
+  margin-top: var(--spacing-2);
+}
+
+* + h2 {
+  margin-top: var(--spacing-3);
+}
+
+* + h3 {
+  margin-top: var(--spacing-1);
+}
+
+.regular {
+  font-weight: var(--font-weight-2);
+}
+
+.bold,
+strong {
+  font-weight: var(--font-weight-3);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-light {
+  color: var(--color-gray-100);
+}
+
+.text-muted {
+  color: var(--color-gray-600);
+}

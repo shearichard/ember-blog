@@ -1,0 +1,60 @@
+// copied from ember-styleguide
+
+.es-footer {
+  & a {
+    text-decoration: none;
+    color: var(--color-gray-900);
+  }
+
+  & .footer-info {
+    display: flex;
+    padding: var(--spacing-2) 0;
+
+    & .footer-logo {
+      height: 5rem;
+    }
+  }
+
+  & .footer-info-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+  & .footer-hr {
+    border: 0;
+    border-bottom: 2px solid var(--color-gray-200);
+    margin: 0;
+  }
+
+  & .footer-statement {
+    padding: var(--spacing-2) 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .footer-copyright {
+    color: var(--color-gray-600);
+  }
+
+  & .footer-social {
+    display: flex;
+    align-items: center;
+
+    & svg {
+      fill: var(--color-gray-600);
+    }
+  }
+
+  & .footer-contributions-wrapper {
+    background-color: var(--color-white);
+  }
+
+  & .footer-contributions {
+    color: var(--color-gray-600);
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
